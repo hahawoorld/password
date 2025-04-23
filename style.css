@@ -1,0 +1,300 @@
+/* layout.css */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 60px; /* 헤더 높이만큼 패딩 */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+main {
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.hero-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.password-generator-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: left;
+}
+
+.password-generator-card h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.features-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature-item {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.why-us-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.why-us-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.why-us-section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.why-us-section ul {
+    list-style: disc;
+    padding-left: 30px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.security-tips-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.security-tips-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.security-tips-section ol {
+    list-style: decimal;
+    padding-left: 30px;
+    color: #555;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-left: 15px;
+}
+
+footer nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+}
+
+/* 기존 style.css 내용 (필요한 스타일만 남기거나 통합) */
+.options label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+.options input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    margin-bottom: 5px;
+}
+
+.advanced-options {
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.result {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.result input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #eee;
+    color: #333;
+}
+
+.result button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.result button:hover {
+    background-color: #0056b3;
+}
